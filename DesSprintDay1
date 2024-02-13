@@ -1,0 +1,18 @@
+Scenarios:
+- Students cannot find information easily
+- Information about clubs may be difficult to find without directly reaching out to the clubs
+- Students don't get easy information regarding job opportunities
+- Many students want to know where to study, or information about buildings.
+
+User Stories:
+Persona 1: Jerry Costanza, 19 year old Freshman at UNC Charlotte. A new computer science major right out of high school attending UNC Charlotte and he is confused where to find information regarding upcoming club events. He is very interested in joining the game development club, but he accidentally missed club day, and is struggling to find how he can easily attend events.
+Persona 2: George Seinfeld, 21 year old Senior at UNC Charlotte. About to graduate with a Bachelor’s in Computer Science. He is looking for an entry-level job in software development. He has no idea how to find career fair information or access information regarding job opportunities for UNC Charlotte students.
+Persona 3: Elaine Kramer, 20 year old Sophomore at UNC Charlotte. Undecided major, but she has a large project coming up for her computer science elective class and is looking for places in Woodward Hall close to her class where she can study. Unfortunately, she does not know quiet places to sit, and ends up being unable to study because she can't find the locations of good study spots.
+
+Feature List:
+Class list with details
+Upcoming club event list
+Upcoming job opportunities list
+Study spots
+Building information
+
