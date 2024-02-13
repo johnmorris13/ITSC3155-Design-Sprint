@@ -1,5 +1,24 @@
+Persona/User story:
+
 Jack 19, UNCC Student
 ____________________________________________________________________________
 Jack is an UNCC student who is having trouble finding information about the various activities on campus that could help him in the future. He is trying to find organizations that he could join. He is trying to find extracurricular activities that he could participate in. But the websites seem scattered and difficult to find information that is current and useful. He is joining UNCC in the fall and wants to know what he could participate in and join. 
 
 He is interested in using (product name) in order to find the information that he wants. He is sure that it will help him currently and potentially in the future.
+
+Mario 35, UNCC Student
+___________________________________________________________________________
+Mario is a freshman who wants to find a club that would best fit him and fill up his freetime. He likes platformer video games and wants to find like minded people. He is having trouble finding a club that suits his wants and needs. The website will help him find what he is looking for. 
+
+
+Scenarios:
+Student can't find information easily
+Information about job opportunities aren't that readily available
+Students get information about extracaricullar activities
+
+Feature List:
+Club event list
+Job event list
+Sport event list
+Class information
+Testing time
