@@ -1,0 +1,16 @@
+Scenarios:
+-Students struggle to find information about campus events and club activities, leading to missed opportunities.
+-Club details are spread across various platforms, making it hard for students to discover new interests and participate in outside of school activities.
+-Students face issues accessing relevant job opportunities and career resources specific to their majors.
+-Many students face issues locating study spots and accessing information about campus buildings.
+User Stories:
+Persona 1: Sarah Johnson, 20-year-old Junior at UNC Charlotte. Sarah is an active student who wants to stay updated on campus events and club activities. She wishes for a platform where she can easily find information about upcoming events and discover new clubs to join.
+Persona 2: Chris Miller, 22-year-old Senior at UNC Charlotte. Chris is preparing to get a job after graduation and wants access to job opportunities and career resources. He needs a way to find job listings and career support in his field of study.
+Persona 3: Lisa Thompson, 19-year-old Sophomore at UNC Charlotte. Lisa struggles to find a quiet study spot on campus where she can focus on her school work and have some alone time. She also needs information on campus buildings to navigate the school more effectively.
+Feature List:
+-Event and Club Activity Calendar
+-Comprehensive Club Directory
+-Job Board and Career Resources
+-Interactive Campus Map
+-Personalized Notifications
+
