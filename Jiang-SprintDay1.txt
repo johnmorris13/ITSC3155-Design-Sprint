@@ -1,0 +1,4 @@
+Scenario 1:
+Student is interested in asian culture and wants to know if there are any clubs they can join. They go onto the website and goes to the search bar and types in the word “asian” and can find information with that keyword/tag
+Scenario 2:
+Club president wants to recruit new members so that president puts out an announcement and so it can be shown on the front page of the website so anyone who uses can see it.
