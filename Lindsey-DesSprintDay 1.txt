@@ -1,0 +1,18 @@
+Scenarios:
+- Information is scattered across a large website
+- Some information that needs to be found is somewhat niche 
+- Some information would be beneficial to be recieved from students or professors
+- Students have a hard time finding specific information out about classes they want to take 
+
+
+User Stories:
+Ben Dover is a 17yo freshman at UNCC. He is looking to reach out and make new friends. He found a club he is interested in and is looking forward to attending but doesn’t know where they meet.
+Mike Oxsmall is a 20yo junior at UNCC, looking to start his career journey and find internships. He hears that there will be several career fairs this semester but doesn’t know where to start to stand out and be successful. 
+
+
+Feature List:
+- Pages with information about classes, including comments where students and professors can write about them
+- Upcoming events
+- Club list, including meeting time and location
+- Campus Map, including study spots 
+- Building information
