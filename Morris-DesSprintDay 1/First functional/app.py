@@ -14,7 +14,7 @@ users = {
 }
 
 def get_calendar(user_id):
-    return GoogleCalendar('dancevirusofficial@gmail.com', credentials_path='ITSC3155-Design-Sprint-main\Morris-DesSprintDay 1\First functional\credentials.json')
+    return GoogleCalendar('dancevirusofficial@gmail.com', credentials_path='credentials.json')
 
 
 def create_calendar(user_id):
