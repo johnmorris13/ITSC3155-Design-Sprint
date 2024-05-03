@@ -3,12 +3,11 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from gcsa.google_calendar import GoogleCalendar
 from gcsa.event import Event
 from gcsa.calendar import Calendar
-
+from datetime import datetime
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 app.static_folder = 'static'
 
-# Dummy user database
 users = {
     "user1": {"password": "password1", "calendar_id": None},
     "user2": {"password": "password2", "calendar_id": None}
@@ -16,6 +15,7 @@ users = {
 
 def get_calendar(user_id):
     return GoogleCalendar('dancevirusofficial@gmail.com', credentials_path='ITSC3155-Design-Sprint-main\Morris-DesSprintDay 1\First functional\credentials.json')
+
 
 def create_calendar(user_id):
     try:
@@ -36,6 +36,8 @@ def create_calendar(user_id):
     except Exception as e:
         print(f"Error creating calendar for user {user_id}: {e}")
 
+
+
 def list_events(user_id):
     try:
         calendar = get_calendar(user_id)
@@ -45,9 +47,13 @@ def list_events(user_id):
         print(f"Error fetching events for user {user_id}: {e}")
         return []
 
+
+
 @app.route('/')
 def home():
     return render_template('home.html')
+
+
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
@@ -91,19 +97,18 @@ def calendar():
     else:
         return redirect(url_for('login'))
 
+
+
 @app.route('/authorize')
 def authorize():
-    # Your authorization logic here
-    # For simplicity, I'm just redirecting to the OAuth callback
     return redirect(url_for('oauth_callback'))
+
+
 
 @app.route('/oauth_callback')
 def oauth_callback():
-    # Your OAuth callback logic here
-    # For simplicity, I'm just redirecting to the calendar
     return redirect(url_for('calendar'))
 
-from datetime import datetime
 
 @app.route('/create_event', methods=['POST'])
 def create_event():
@@ -123,7 +128,6 @@ def create_event():
             return "Error creating event. Please try again."
     else:
         return redirect(url_for('login'))
-
 
 
 @app.route('/delete_event', methods=['POST'])
@@ -149,7 +153,6 @@ def delete_event():
 
 
 
-
 @app.route('/delete_calendar', methods=['POST'])
 def delete_calendar():
     if 'username' in session:
@@ -166,6 +169,7 @@ def delete_calendar():
             return "Error deleting calendar. Please try again."
     else:
         return redirect(url_for('login'))
+
 
 @app.route('/update_calendar', methods=['POST'])
 def update_calendar():
@@ -205,5 +209,7 @@ def clear_calendar():
     else:
         return redirect(url_for('login'))
 
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
+
