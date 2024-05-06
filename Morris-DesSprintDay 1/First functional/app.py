@@ -152,7 +152,7 @@ def delete_event():
         return redirect(url_for('login'))
 
 
-
+#method to delete the calendar
 @app.route('/delete_calendar', methods=['POST'])
 def delete_calendar():
     if 'username' in session:
@@ -165,17 +165,19 @@ def delete_calendar():
             session.pop('calendar_id', None)
             return redirect(url_for('calendar'))
         except Exception as e:
+            #an error has occured
             print(f"Error deleting calendar for user {username}: {e}")
             return "Error deleting calendar. Please try again."
     else:
         return redirect(url_for('login'))
 
-
+#method to update the calendar
 @app.route('/update_calendar', methods=['POST'])
 def update_calendar():
     if 'username' in session:
         username = session['username']
         try:
+            #update the calendar based on the id of the calendar
             calendar = get_calendar(username)
             calendar_id = users[username]['calendar_id']
             calendar_obj = calendar.get_calendar(calendar_id)
@@ -190,13 +192,14 @@ def update_calendar():
             return "Error updating calendar. Please try again."
     else:
         return redirect(url_for('login'))
-
-
+    
+#method to clear the calendar
 @app.route('/clear_calendar', methods=['POST'])
 def clear_calendar():
     if 'username' in session:
         username = session['username']
         try:
+            #gets the specific calendar
             calendar = get_calendar(username)
             calendar_id = users[username]['calendar_id']
             events = list(calendar.get_events())
